@@ -1,0 +1,84 @@
+body {
+    background: #4ae;
+    color: #000040;
+}
+
+h1,
+h2,
+#stopka {
+    background: #000040;
+    color: #77b4ff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    margin-left: 13px;
+    margin-top: 10px;
+    padding: 0;
+}
+
+#tresc {
+    background: #80ffff;
+    border: 1px solid #000040;
+    border-radius: 1px;
+    box-shadow: 0 0 8px #666;
+}
+
+#menu {
+    background: #ffffff;
+    border: 1px solid #000040;
+    border-radius: 1px;
+}
+
+/* General form styling */
+form {
+    font-family: Arial, sans-serif;
+    margin: 10px;
+}
+
+/* Style the label element */
+form label {
+    display: block;
+    margin-top: 2px;
+    margin-bottom: 0;
+}
+
+/* Style the input elements */
+form input[type="text"],
+form input[type="password"],
+form input[type="email"],
+form input[type="number"],
+form textarea {
+    width: 20%;
+    padding: 2px;
+    margin-bottom: 1px;
+    margin-left: 12%;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+}
+
+form select {
+    width: 20%;
+    padding: 2px;
+    margin-bottom: 1px;
+    margin-left: 70px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+}
+
+/* przycisk wyślij */
+form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* zmiana przycisku wyślij przy hoverowaniu kursorem */
+form input[type="submit"]:hover {
+    background-color: #45a049;
+}

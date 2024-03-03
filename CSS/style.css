@@ -1,0 +1,46 @@
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #4ae;
+    color: #000040;
+}
+
+h1, h2, #stopka {
+    background: #000040;
+    color: #77b4ff;
+    text-align: center;
+}
+
+#tresc {
+    background: #80ffff;
+    border: 1px solid #000040;
+    border-radius: 1px;
+    box-shadow: 0 0 6px #666;
+}
+
+#menu {
+    background: #ffffff;
+    border: 1px solid #000040;
+    border-radius: 1px;
+}
+
+fieldset {
+    background: skyblue;
+    padding: 0 10px 10px;
+    border: 1px solid #666;
+    border-radius: 8px;
+    box-shadow: 0 0 8px #666;
+}
+
+legend {
+    padding: 2px 4px;
+    background: #44aaee;
+    color: darkblue;
+    font-weight: bold;
+    border: 1px solid #000040;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #666;
+}

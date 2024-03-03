@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/style.css" type="text/css"/>
+    <title>Kreator pizzy</title>
+</head>
+<body>
+<h1>Kreator pizzy</h1>
+<form action="mailto:michalbanaszek03@gmail.com" method="post">
+    <div id="menu">
+        <a href="index.html">Podstawowe znaczniki</a>
+        <a href="tabele.html">Tworzenie tabel</a>
+        <a href="formularze.html">Budowa formularzy</a>
+    </div>
+    <fieldset>
+        <legend>Rozmiar:</legend>
+        <input type="radio" name="size" value="S"> mała
+        <input type="radio" name="size" value="M"> średnia
+        <input type="radio" name="size" value="L"> duża
+    </fieldset>
+    <fieldset>
+        <legend>Dodatki:</legend>
+        <input type="checkbox" name="ham" value="h"> szynka
+        <input type="checkbox" name="salami" value="s"> salami
+        <input type="checkbox" name="bacon" value="h"> boczek
+        <input type="checkbox" name="paprica" value="p"> papryka
+        <input type="checkbox" name="tomato" value="t"> pomidor
+        <input type="checkbox" name="cheese" value="ch"> ser
+    </fieldset>
+    <fieldset>
+        <legend>Sosy:</legend>
+        Wybierz sos:
+        <label>
+            <select size="4" name="dip">
+                <option value="pom">Pomidorowy</option>
+                <option value="cz">Czosnkowy</option>
+                <option value="kl">Ketchup łagodny</option>
+                <option value="kp">Ketchup pikantny</option>
+                <option value="bbc">Barbecue</option>
+                <option value="m">Mayo</option>
+                <option value="sk">Słodko-kwaśny</option>
+            </select>
+        </label><br>
+        Inne uwagi:
+        <label>
+            <textarea cols="40" rows="4" name="comments">
+            </textarea>
+        </label><br>
+        <input type="reset" value="Wyczyść dane">
+        <input type="submit" value="Wyślij zamówienie">
+    </fieldset>
+</form>
+
+</body>
+</html>
