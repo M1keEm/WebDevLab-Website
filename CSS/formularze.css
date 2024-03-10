@@ -3,6 +3,14 @@ body {
     color: #000040;
 }
 
+#kontener {
+    background: #ffffff;
+    width: 90%;
+    box-shadow: 0 0 8px #666;
+    margin: auto;
+    font-size: 110%;
+}
+
 h1,
 h2,
 #stopka {
@@ -24,16 +32,13 @@ ul{
 }
 
 #tresc {
+    height: 70vh;
+    padding:  30px 0 0 30px;
     background: #80ffff;
-    border: 1px solid #000040;
+    border: 0 solid #000040;
     border-radius: 1px;
-    box-shadow: 0 0 8px #666;
-}
-
-#menu {
-    background: #ffffff;
-    border: 1px solid #000040;
-    border-radius: 1px;
+    /*font-size: 110%;*/
+    /*box-shadow: 0 0 2px #666;*/
 }
 
 /* General form styling */
@@ -85,4 +90,59 @@ form input[type="submit"] {
 /* zmiana przycisku wyślij przy hoverowaniu kursorem */
 form input[type="submit"]:hover {
     background-color: #45a049;
+}
+
+#nav {
+    text-align: left;
+    overflow: hidden;
+    font-family: calibri, tahoma, serif;
+}
+
+ul#nav li {
+    border: 1px solid #d5d5d5;
+    list-style-type: none;
+    float: left;
+    background: darkblue;
+    margin-left: 3px;
+}
+
+ul#nav li:hover {
+    border: 1px solid #d5d5d5;
+    list-style-type: none;
+    float: left;
+    background: #ffffff;
+    margin-left: 3px;
+}
+
+ul#nav li:hover a {
+    color: black;
+}
+
+ul#nav li a {
+    display: block;
+    padding: 4pt;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+ul#nav li li a {
+    width: 160px;
+    background: dodgerblue;
+}
+
+ul#nav li a:hover {
+    color: black;
+    background: white;
+}
+
+ul#nav li ul {
+    overflow: hidden;
+    display: none;
+}
+
+ul#nav li:hover ul {
+    position: absolute;
+    padding: 0;
+    display: block;
+    width: 177px;
 }
