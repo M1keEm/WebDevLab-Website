@@ -76,35 +76,48 @@ legend {
     overflow: hidden;
     font-family: calibri, tahoma, serif;
 }
+
 ul#nav li {
     border: 1px solid #d5d5d5;
     list-style-type: none;
     float: left;
-    background: #98bed8;
+    background: darkblue;
     margin-left: 3px;
 }
+
 ul#nav li:hover {
     border: 1px solid #d5d5d5;
     list-style-type: none;
     float: left;
-    background: #f0f0f0;
     margin-left: 3px;
 }
+
 ul#nav li a {
-    display : block;
-    padding : 4pt;
-    text-decoration : none;
+    display: block;
+    padding: 4pt;
+    text-decoration: none;
+    color: #ffffff;
 }
+
 ul#nav li li a {
     width: 160px;
+    background: dodgerblue;
 }
-ul#nav li li:hover {
-    background: white;
+
+/*ul#nav li li:hover {*/
+/*    background: white;*/
+/*}*/
+
+ul#nav li a:hover {
+    color: blue;
+    background: #ffffff;
 }
+
 ul#nav li ul {
     overflow: hidden;
     display: none;
 }
+
 ul#nav li:hover ul {
     position: absolute;
     background: #aaa;
