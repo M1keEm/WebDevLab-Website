@@ -12,9 +12,17 @@
         <h2>Szybki kurs HTML</h2>
     </div>
     <div id="menu">
-        <a href="index.html">Podstawowe znaczniki</a>
-        <a href="tabele.html">Tworzenie tabel</a>
-        <a href="zamowienie.html">Kreator pizzy</a>
+        <ul id="nav">
+            <li><a href="index.html">Podstawy</a></li>
+            <li><a href="tabele.html">Tabele</a></li>
+            <li><a href="">Formularze</a>
+                <ul>
+                    <li><a href="formularze.html">Pola formularza</a></li>
+                    <li><a href="obliczenia.html">Obliczenia w formularzu</a></li>
+                </ul>
+            </li>
+            <li><a href="" title="">Galeria</a></li>
+        </ul>
     </div>
     <div id="tresc">
         <div>
@@ -30,9 +38,9 @@
             </ul>
             <h3>Przykładowy formularz HTML:</h3>
             <form action="mailto:michalbanaszek03@gmail.com" method="POST">
-<!--                <div class="column">-->
+                <div class="row">
 
-<!--                </div>-->
+                </div>
                 <label>
                     Nazwisko:
                     <input type="text" name="surname">

@@ -3,6 +3,13 @@ h1, h2, h3 {
     padding: 0;
 }
 
+#kontener {
+    background: #ffffff;
+    width: 90%;
+    box-shadow: 0 0 8px #666;
+    margin: auto;
+}
+
 body {
     background: #4ae;
     color: #000040;
@@ -15,17 +22,22 @@ h1, h2, #stopka {
 }
 
 #tresc {
+    float: left;
+    width: 75%;
+    height: 70vh;
+    padding: 1%;
     background: #80ffff;
-    border: 1px solid #000040;
+    border: 0 solid #000040;
     border-radius: 1px;
-    box-shadow: 0 0 6px #666;
+    /*box-shadow: 0 0 2px #666;*/
 }
 
-#menu {
-    background: #ffffff;
-    border: 1px solid #000040;
-    border-radius: 1px;
+#pasek {
+    float: right;
+    width: 20%;
+    padding: 1%;
 }
+
 
 fieldset {
     background: skyblue;
@@ -33,6 +45,7 @@ fieldset {
     border: 1px solid #666;
     border-radius: 8px;
     box-shadow: 0 0 8px #666;
+    width: unset;
 }
 
 legend {
@@ -43,4 +56,66 @@ legend {
     border: 1px solid #000040;
     border-radius: 8px;
     box-shadow: 0 0 10px #666;
+}
+
+*.box {
+    background: #0000a0;
+    color: #dbffff;
+    padding: 5px;
+    margin: 5px;
+    font-size: 90%;
+}
+
+/* hiperłącza w elementach klasy box*/
+*.box a {
+    color: #ffffb0
+}
+
+#nav {
+    text-align: left;
+    overflow: hidden;
+    font-family: calibri, tahoma, serif;
+}
+ul#nav li {
+    border: 1px solid #d5d5d5;
+    list-style-type: none;
+    float: left;
+    background: #98bed8;
+    margin-left: 3px;
+}
+ul#nav li:hover {
+    border: 1px solid #d5d5d5;
+    list-style-type: none;
+    float: left;
+    background: #f0f0f0;
+    margin-left: 3px;
+}
+ul#nav li a {
+    display : block;
+    padding : 4pt;
+    text-decoration : none;
+}
+ul#nav li li a {
+    width: 160px;
+}
+ul#nav li li:hover {
+    background: white;
+}
+ul#nav li ul {
+    overflow: hidden;
+    display: none;
+}
+ul#nav li:hover ul {
+    position: absolute;
+    background: #aaa;
+    padding: 0;
+    display: block;
+    width: 177px;
+}
+
+#stopka {
+    clear: both;
+    width: 100%;
+    padding: 5px 0 5px 0;
+    text-align: center;
 }
