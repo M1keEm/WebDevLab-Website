@@ -89,7 +89,12 @@ ul#nav li:hover {
     border: 1px solid #d5d5d5;
     list-style-type: none;
     float: left;
+    background: #ffffff;
     margin-left: 3px;
+}
+
+ul#nav li:hover a {
+    color: black;
 }
 
 ul#nav li a {
@@ -104,13 +109,9 @@ ul#nav li li a {
     background: dodgerblue;
 }
 
-/*ul#nav li li:hover {*/
-/*    background: white;*/
-/*}*/
-
 ul#nav li a:hover {
-    color: blue;
-    background: #ffffff;
+    color: black;
+    background: white;
 }
 
 ul#nav li ul {
@@ -120,7 +121,6 @@ ul#nav li ul {
 
 ul#nav li:hover ul {
     position: absolute;
-    background: #aaa;
     padding: 0;
     display: block;
     width: 177px;
