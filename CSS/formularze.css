@@ -19,6 +19,10 @@ h3 {
     padding: 0;
 }
 
+ul{
+    list-style-type: square;
+}
+
 #tresc {
     background: #80ffff;
     border: 1px solid #000040;
@@ -39,7 +43,7 @@ form {
 }
 
 /* Style the label element */
-form label {
+div#labelled label{
     display: block;
     margin-top: 2px;
     margin-bottom: 0;

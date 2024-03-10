@@ -18,6 +18,7 @@
             <li><a href="">Formularze</a>
                 <ul>
                     <li><a href="formularze.html">Pola formularza</a></li>
+                    <li><a href="zamowienie.html">Kreator pizzy</a></li>
                     <li><a href="obliczenia.html">Obliczenia w formularzu</a></li>
                 </ul>
             </li>
@@ -38,40 +39,57 @@
             </ul>
             <h3>Przykładowy formularz HTML:</h3>
             <form action="mailto:michalbanaszek03@gmail.com" method="POST">
-                <div class="row">
-
+                <div id="labelled">
+                    <label>
+                        Nazwisko:
+                        <input type="text" name="surname">
+                    </label>
+                    <label>
+                        Wiek:
+                        <input type="number" name="age">
+                    </label>
+                    <label>
+                        Państwo:
+                        <select size="1" name="country">
+                            <option value="p">Polska</option>
+                            <option value="en">Anglia</option>
+                            <option value="cz">Czechy</option>
+                            <option value="n">Niemcy</option>
+                            <option value="s">Słowacja</option>
+                            <option value="w">Węgry</option>
+                        </select>
+                    </label>
+                    <label>
+                        Adres e-mail:
+                        <input type="email" name="email">
+                    </label>
                 </div>
-                <label>
-                    Nazwisko:
-                    <input type="text" name="surname">
-                </label>
-                <label>
-                    Wiek:
-                    <input type="number" name="age">
-                </label>
-                <label>
-                    Państwo:
-                    <select size="1" name="country">
-                        <option value="p">Polska</option>
-                        <option value="en">Anglia</option>
-                        <option value="cz">Czechy</option>
-                        <option value="n">Niemcy</option>
-                        <option value="s">Słowacja</option>
-                        <option value="w">Węgry</option>
-                    </select>
-                </label>
-                <label>
-                    Adres e-mail:
-                    <input type="email" name="email">
-                </label>
                 <h4>Zamawiam tutorial z języka:</h4>
-                <input type="checkbox" name="PHP" value="PHP"> PHP
-                <input type="checkbox" name="C/C++" value="C"> C/C++
-                <input type="checkbox" name="Java" value="J"> Java
+                <label>
+                    <input type="checkbox" name="PHP" value="PHP">
+                    PHP
+                </label>
+                <label>
+                    <input type="checkbox" name="C/C++" value="C">
+                    C/C++
+                </label>
+                <label>
+                    <input type="checkbox" name="Java" value="J">
+                    Java
+                </label>
                 <h4>Sposób zapłaty:</h4>
-                <input type="radio" name="payment method" value="EC"> eurocard
-                <input type="radio" name="payment method" value="VI"> visa
-                <input type="radio" name="payment method" value="BT"> przelew bankowy <br>
+                <label>
+                    <input type="radio" name="payment method" value="EC">
+                    eurocard
+                </label>
+                <label>
+                    <input type="radio" name="payment method" value="VI">
+                    visa
+                </label>
+                <label>
+                    <input type="radio" name="payment method" value="BT">
+                    przelew bankowy
+                </label><br><br>
                 <input type="submit" value="Wyślij">
                 <input type="reset" value="Anuluj">
             </form>
