@@ -1,25 +1,23 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="pl" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title> Formularz rejestracyjny</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walidacja</title>
 </head>
 <body>
-<h1>Walidacja</h1>
+<h2>Walidacja</h2>
 <div>
     <form action="#" method="get">
         <p>
             Imię*:<br>
             <label>
-                <input type="text"  name="imie" required pattern="[a-zA-Z-]{1,30}" autofocus autocapitalize="words">
+                <input type="text" name="imie" required pattern="[a-zA-Z-]{1,30}" autofocus autocapitalize="words">
             </label><br>
             Nazwisko*:<br>
             <label>
                 <input type="text" name="nazwisko" required pattern="[a-zA-Z-]{1,30}\s[a-zA-Z-]{1,30}">
             </label><br>
-            38
-            Zintegrowany Program Rozwoju Politechniki Lubelskiej – część druga<br><br>
             Nr telefonu*:<br>
             <label>
                 <input type="tel" name="telefon" required placeholder="123 456 789" pattern="[0-9]{9}">
@@ -41,11 +39,11 @@
             <label>
                 Uczeń:
                 <input type="radio" name="kto" value="uczen">
-            </label>
+            </label>&emsp;
             <label>
                 Student:
                 <input type="radio" name="kto" value="student">
-            </label>
+            </label>&emsp;
             <label>
                 Pracownik:
                 <input type="radio" name="kto" value="pracownik">
