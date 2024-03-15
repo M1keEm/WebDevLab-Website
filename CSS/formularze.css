@@ -161,6 +161,25 @@ form input[type="submit"]:hover {
     background-color: #45a049;
 }
 
+fieldset {
+    background: #c6f0ff;
+    padding: 10px 10px 10px;
+    border: 1px solid #666;
+    border-radius: 8px;
+    box-shadow: 0 0 4px #666;
+    width: unset;
+}
+
+legend {
+    padding: 2px 4px;
+    background: #ffffff;
+    color: darkblue;
+    font-weight: bold;
+    border: 1px solid #000040;
+    border-radius: 8px;
+    box-shadow: 0 0 4px #666;
+}
+
 #nav {
     text-align: left;
     overflow: hidden;
