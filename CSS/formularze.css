@@ -27,13 +27,13 @@ h3 {
     padding: 0;
 }
 
-ul{
+ul {
     list-style-type: square;
 }
 
 #tresc {
     height: 70vh;
-    padding:  30px 0 0 30px;
+    padding: 30px 0 0 30px;
     background: #80ffff;
     border: 0 solid #000040;
     border-radius: 1px;
@@ -48,7 +48,7 @@ form {
 }
 
 /* Style the label element */
-div#labelled label{
+div#labelled label {
     display: block;
     margin-top: 2px;
     margin-bottom: 0;
@@ -58,12 +58,81 @@ div#labelled label{
 form input[type="text"],
 form input[type="password"],
 form input[type="email"],
-form input[type="number"],
 form textarea {
     width: 20%;
     padding: 2px;
     margin-bottom: 1px;
-    margin-left: 12%;
+    margin-left: 0.5%;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+}
+
+form input#beneficiaries\ list {
+    width: 22%;
+    padding: 2px;
+    margin-bottom: 1px;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+}
+
+form input[type="number"] {
+    width: 5%;
+    padding: 2px;
+    margin-bottom: 1px;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+}
+
+form input#card\ number{
+    width: 9%;
+    padding: 2px;
+    margin-bottom: 1px;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+}
+
+form input#monthYear{
+    width: 4%;
+    padding: 2px;
+    margin-bottom: 1px;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+}
+
+form input[type="text"]#year{
+    width: 5%;
+    padding: 2px;
+    margin-bottom: 1px;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+}
+
+form input[type="text"]#cvv{
+    width: 2.5%;
+    padding: 2px;
+    margin-bottom: 1px;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+}
+
+form input[type="text"]#donor{
+    width: 15%;
+    padding: 2px;
+    margin-bottom: 1px;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
     border: 2px solid #ccc;
     border-radius: 6px;
 }

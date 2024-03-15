@@ -26,74 +26,65 @@
         </ul>
     </div>
     <div id="tresc">
-        <div>
-            <h3>Podstawowe znaczniki formularza HTML to:</h3>
-            <ul>
-                <li>&lt;form&gt; - znacznik podstawowy zawierający pola formularza</li>
-                <li>&lt;input&gt; - znacznik umożliwia wstawienie różnych pól (pole tekstowe,
-                    przycisk typu radio, przycisk typu checkbox) w zależności od wartości jego atrybutu type
-                </li>
-                <li>&lt;select&gt; - pole formularza typu lista rozwijana</li>
-                <li>&lt;textarea&gt; - pole tekstowe typu obszar tekstowy</li>
-                <li>&lt;button&gt; - pole formularza typu przycisk</li>
-            </ul>
-            <h3>Przykładowy formularz HTML:</h3>
-            <form action="mailto:michalbanaszek03@gmail.com" method="POST">
-                <div id="labelled">
+        <h3>Formularz dotacji dla organizacji pozarządowej:</h3>
+        <form action="#" method="get">
+            <div>
+                <fieldset>
                     <label>
-                        Nazwisko:
-                        <input type="text" name="surname">
+                        Wybór beneficjenta:<input id="beneficiaries list" list="beneficiaries"
+                                                  placeholder="Fundacja Wielkiej Orkiestry Świątecznej Pomocy" required>
+                    </label>
+                    <datalist id="beneficiaries">
+                        <option value="Fundacja Dzieciom">
+                        <option value="Fundacja Wielkiej Orkiestry Świątecznej Pomocy">
+                        <option value="Fundacja Mam Marzenie">
+                        <option value="Fundacja Polsat">
+                        <option value="Fundacja TVN">
+                    </datalist>
+                    <label>
+                        Kwota dotacji:<input type="number" name="amount"
+                                             title="Proszę podać kwotę podzielną przez 10(min. 20 PLN, max.100tys. PLN):"
+                                             min="20" max="100000" step="10" required>
+                    </label>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Dane karty płatniczej:</legend>
+                    Rodzaj karty płatniczej:
+                    <label>
+                        <input type="radio" name="card" value="visa" required>
+                        Visa
                     </label>
                     <label>
-                        Wiek:
-                        <input type="number" name="age" min="16" max="120" step="1">
+                        <input type="radio" name="card" value="mastercard" required>
+                        Mastercard
                     </label>
                     <label>
-                        Państwo:
-                        <select size="1" name="country">
-                            <option value="p">Polska</option>
-                            <option value="en">Anglia</option>
-                            <option value="cz">Czechy</option>
-                            <option value="n">Niemcy</option>
-                            <option value="s">Słowacja</option>
-                            <option value="w">Węgry</option>
-                        </select>
-                    </label>
-                    <label>
-                        Adres e-mail:
-                        <input type="email" name="email">
-                    </label>
-                </div>
-                <h4>Zamawiam tutorial z języka:</h4>
-                <label>
-                    <input type="checkbox" name="PHP" value="PHP">
-                    PHP
-                </label>
-                <label>
-                    <input type="checkbox" name="C/C++" value="C">
-                    C/C++
-                </label>
-                <label>
-                    <input type="checkbox" name="Java" value="J">
-                    Java
-                </label>
-                <h4>Sposób zapłaty:</h4>
-                <label>
-                    <input type="radio" name="payment method" value="EC">
-                    eurocard
-                </label>
-                <label>
-                    <input type="radio" name="payment method" value="VI">
-                    visa
-                </label>
-                <label>
-                    <input type="radio" name="payment method" value="BT">
-                    przelew bankowy
-                </label><br><br>
+                        <input type="radio" name="card" value="amex" required>
+                        Amex
+                    </label><br>
+                    <label for="card number">
+                        Numer karty płatniczej:
+                        <input id="card number" type="text" name="card number" pattern="^[0-9]{13}([0-9]{3})?$"
+                               title="Proszę podać 13 lub 16-cyfrowy numer karty" minlength="13" maxlength="16"
+                               required>
+                    </label><br>
+                    <label for="monthYear">Data wygaśnięcia karty płatniczej:</label>
+                    <input type="text" id="monthYear" name="monthYear" pattern="(0[1-9]|1[0-2])/(19|20)\d\d"
+                           title="Proszę podać datę w formacie MM/YYYY" placeholder="01/2024" required>
+                    <label for="cvv">CVV:</label>
+                    <input type="text" id="cvv" name="cvv" pattern="^[0-9]{3}([0-9]{1})?$"
+                           title="Proszę podać 3 lub 4 cyfry numeru CVV" required>
+                </fieldset>
+                <br>
+                <label for="donor">Darczyńca:</label>
+                <input type="text" id="donor" name="donor" pattern=".{3,}" title="Proszę wprowadzić co najmniej 3 znaki"
+                       required>
+                <br><br>
                 <input type="submit" value="Wyślij">
                 <input type="reset" value="Anuluj">
-            </form>
-        </div>
+            </div>
+        </form>
     </div>
     <div id="stopka">
         &copy;MB
