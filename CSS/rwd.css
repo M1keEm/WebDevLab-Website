@@ -1,5 +1,6 @@
 body {
     background: #d4c7b9;
+    height: auto;
 }
 
 h1, h2, footer {
@@ -68,7 +69,7 @@ footer {
 
 @media screen and (max-width: 480px) {
     body {
-        font-size: 18px;
+        font-size: 4.5vw;
     }
 
     nav a {
@@ -83,7 +84,7 @@ footer {
     }
 
     h1, h2 {
-        font-size: larger;
+        font-size: 6vw;
     }
 }
 
@@ -99,4 +100,39 @@ footer {
     h2 {
         font-size: 18px;
     }
+}
+
+@media only screen and (min-width: 768px)
+and (max-width: 1024px)
+and (orientation: landscape) {
+    body {
+        background-color: #6a4936;
+        font-size: 1.3em;
+    }
+    h1, h2 {
+        color: #ffe9ba;
+    }
+    p {
+        font-size: 1.2em;
+        color: #d4c7b9;
+    }
+    nav {
+        background-color: #ac946d;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    body {
+        font-size: 1.5em;
+    }
+    h1, h2 {
+        /*font-size: 1.2em;*/
+    }
+    p {
+        font-size: 1.2em;
+    }
+    nav {
+        font-size: 1.4em;
+    }
+
 }
