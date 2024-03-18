@@ -66,15 +66,24 @@ footer {
     width: 90%;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 18px;
+    }
+
     nav a {
-        width: 48%;
-        padding: 10px 0;
-        font-size: 140%;
+        width: 100%;
+        padding: 15px 0;
+        font-size: 160%;
     }
 
     .slajd {
-        width: 45%;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    h1, h2 {
+        font-size: larger;
     }
 }
 
