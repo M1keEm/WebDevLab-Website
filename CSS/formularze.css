@@ -19,12 +19,13 @@ footer {
     text-align: center;
     font-family: calibri, tahoma, serif;
     line-height: 1.5;
+    margin-bottom: 0;
 }
 
 h3 {
     margin-left: 13px;
     margin-top: 10px;
-    padding: 10px 0 0 0;
+    padding: 0;
 }
 
 ul {
@@ -41,6 +42,10 @@ ul {
     border: 0 solid #000040;
     border-radius: 1px;
     box-shadow: 0 0 2px #666;
+}
+
+#tresc p {
+    padding: 0 0 0 20px;
 }
 
 /* General form styling */
@@ -165,7 +170,7 @@ form input[type="submit"]:hover {
 
 fieldset {
     background: #c6f0ff;
-    padding: 10px 10px 10px;
+    padding: 0 10px 10px;
     border: 1px solid #666;
     border-radius: 8px;
     box-shadow: 0 0 4px #666;
@@ -182,13 +187,15 @@ legend {
     box-shadow: 0 0 4px #666;
 }
 
-#nav {
+nav {
     text-align: left;
     overflow: hidden;
     font-family: calibri, tahoma, serif;
+    margin-top: 0%;
+    margin-bottom: 1%;
 }
 
-ul#nav li {
+nav ul li {
     border: 1px solid #d5d5d5;
     list-style-type: none;
     float: left;
@@ -196,7 +203,7 @@ ul#nav li {
     margin-left: 3px;
 }
 
-ul#nav li:hover {
+nav ul li:hover {
     border: 1px solid #d5d5d5;
     list-style-type: none;
     float: left;
@@ -204,33 +211,33 @@ ul#nav li:hover {
     margin-left: 3px;
 }
 
-ul#nav li:hover a {
+nav ul li:hover a {
     color: black;
 }
 
-ul#nav li a {
+nav ul li a {
     display: block;
     padding: 4pt;
     text-decoration: none;
     color: #ffffff;
 }
 
-ul#nav li li a {
+nav ul li li a {
     width: 160px;
     background: dodgerblue;
 }
 
-ul#nav li a:hover {
+nav ul li a:hover {
     color: black;
     background: white;
 }
 
-ul#nav li ul {
+nav ul li ul {
     overflow: hidden;
     display: none;
 }
 
-ul#nav li:hover ul {
+nav ul li:hover ul {
     position: absolute;
     padding: 0;
     display: block;

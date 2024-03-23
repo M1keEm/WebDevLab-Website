@@ -17,6 +17,7 @@ h1, h2, footer {
     text-align: center;
     font-family: calibri, tahoma, serif;
     line-height: 1.5;
+    margin-bottom: 0;
 }
 
 h3 {
@@ -77,13 +78,15 @@ tfoot a {
     background: #ffffff;
 }
 
-#nav {
+nav {
     text-align: left;
     overflow: hidden;
     font-family: calibri, tahoma, serif;
+    margin-top: 0%;
+    margin-bottom: 1%;
 }
 
-ul#nav li {
+nav ul li {
     border: 1px solid #d5d5d5;
     list-style-type: none;
     float: left;
@@ -91,7 +94,7 @@ ul#nav li {
     margin-left: 3px;
 }
 
-ul#nav li:hover {
+nav ul li:hover {
     border: 1px solid #d5d5d5;
     list-style-type: none;
     float: left;
@@ -99,33 +102,33 @@ ul#nav li:hover {
     margin-left: 3px;
 }
 
-ul#nav li:hover a {
+nav ul li:hover a {
     color: black;
 }
 
-ul#nav li a {
+nav ul li a {
     display: block;
     padding: 4pt;
     text-decoration: none;
     color: #ffffff;
 }
 
-ul#nav li li a {
+nav ul li li a {
     width: 160px;
     background: dodgerblue;
 }
 
-ul#nav li a:hover {
+nav ul li a:hover {
     color: black;
     background: white;
 }
 
-ul#nav li ul {
+nav ul li ul {
     overflow: hidden;
     display: none;
 }
 
-ul#nav li:hover ul {
+nav ul li:hover ul {
     position: absolute;
     padding: 0;
     display: block;
