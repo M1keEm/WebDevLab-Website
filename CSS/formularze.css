@@ -24,7 +24,7 @@ footer {
 h3 {
     margin-left: 13px;
     margin-top: 10px;
-    padding: 0;
+    padding: 10px 0 0 0;
 }
 
 ul {
@@ -33,7 +33,10 @@ ul {
 
 #tresc {
     height: 100%;
-    padding: 20px 0 20px 30px;
+    width: 95%;
+    margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: 30px;
     background: #80ffff;
     border: 0 solid #000040;
     border-radius: 1px;
@@ -232,4 +235,11 @@ ul#nav li:hover ul {
     padding: 0;
     display: block;
     width: 177px;
+}
+
+footer {
+    clear: both;
+    width: 100%;
+    padding: 5px 0 5px 0;
+    text-align: center;
 }
