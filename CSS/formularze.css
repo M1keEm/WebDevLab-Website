@@ -74,6 +74,15 @@ form textarea {
     border-radius: 6px;
 }
 
+form input[type="tel"] {
+    width: 6%;
+    padding: 2px;
+    margin-bottom: 1px;
+    margin-left: 0.5%;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+}
+
 form input#beneficiaries\ list {
     width: 22%;
     padding: 2px;

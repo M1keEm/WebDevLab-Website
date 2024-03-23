@@ -40,16 +40,16 @@
         <form action="mailto:michalbanaszek03@gmail.com" method="POST">
             <div id="labelled">
                 <label>
-                    Nazwisko:
-                    <input type="text" name="surname">
+                    Nazwisko*:
+                    <input type="text" name="surname" required pattern="[a-zA-Z-]{1,30}\s[a-zA-Z-]{1,30}">
                 </label>
                 <label>
                     Wiek:
                     <input type="number" name="age" min="16" max="120" step="1">
                 </label>
                 <label>
-                    Państwo:
-                    <select size="1" name="country">
+                    Państwo*:
+                    <select size="1" name="country" required>
                         <option value="p">Polska</option>
                         <option value="en">Anglia</option>
                         <option value="cz">Czechy</option>
@@ -59,8 +59,12 @@
                     </select>
                 </label>
                 <label>
-                    Adres e-mail:
-                    <input type="email" name="email">
+                    Nr telefonu*:
+                    <input type="tel" name="telefon" title="Proszę podać 9-cyfrowy nr telefonu" required placeholder="123 456 789" maxlength="9" pattern="[0-9]{9}">
+                </label>
+                <label>
+                    Adres e-mail*:
+                    <input type="email" name="email" required placeholder="mail@gmail.com">
                 </label>
             </div>
             <h4>Zamawiam tutorial z języka:</h4>
