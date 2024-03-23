@@ -13,12 +13,12 @@ body {
 
 h1,
 h2,
-#stopka {
+footer {
     background: #000040;
     color: #77b4ff;
     text-align: center;
-    margin: 0;
-    padding: 0;
+    font-family: calibri, tahoma, serif;
+    line-height: 1.5;
 }
 
 h3 {
@@ -32,13 +32,12 @@ ul {
 }
 
 #tresc {
-    height: 70vh;
-    padding: 30px 0 0 30px;
+    height: 100%;
+    padding: 20px 0 20px 30px;
     background: #80ffff;
     border: 0 solid #000040;
     border-radius: 1px;
-    /*font-size: 110%;*/
-    /*box-shadow: 0 0 2px #666;*/
+    box-shadow: 0 0 2px #666;
 }
 
 /* General form styling */
@@ -87,7 +86,7 @@ form input[type="number"] {
     border-radius: 6px;
 }
 
-form input#card\ number{
+form input#card\ number {
     width: 9%;
     padding: 2px;
     margin-bottom: 1px;
@@ -97,7 +96,7 @@ form input#card\ number{
     border-radius: 6px;
 }
 
-form input#monthYear{
+form input#monthYear {
     width: 4%;
     padding: 2px;
     margin-bottom: 1px;
@@ -107,7 +106,7 @@ form input#monthYear{
     border-radius: 6px;
 }
 
-form input[type="text"]#year{
+form input[type="text"]#year {
     width: 5%;
     padding: 2px;
     margin-bottom: 1px;
@@ -117,7 +116,7 @@ form input[type="text"]#year{
     border-radius: 6px;
 }
 
-form input[type="text"]#cvv{
+form input[type="text"]#cvv {
     width: 2.5%;
     padding: 2px;
     margin-bottom: 1px;
@@ -127,7 +126,7 @@ form input[type="text"]#cvv{
     border-radius: 6px;
 }
 
-form input[type="text"]#donor{
+form input[type="text"]#donor {
     width: 15%;
     padding: 2px;
     margin-bottom: 1px;

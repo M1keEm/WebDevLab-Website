@@ -11,12 +11,7 @@ body {
     font-size: 110%;
 }
 
-h1, h2, h3 {
-    margin: 0;
-    padding: 0;
-}
-
-h1, h2, #stopka {
+h1, h2, footer {
     background: #000040;
     color: #77b4ff;
     text-align: center;
@@ -131,7 +126,7 @@ ul#nav li:hover ul {
     width: 177px;
 }
 
-#stopka {
+footer {
     clear: both;
     width: 100%;
     padding: 5px 0 5px 0;

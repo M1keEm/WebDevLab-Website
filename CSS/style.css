@@ -11,17 +11,28 @@ body {
     font-size: 110%;
 }
 
-h1, h2, h3 {
-    margin: 0;
-    padding: 0;
-}
-
-h1, h2, #stopka {
+h1, h2, footer {
     background: #000040;
     color: #77b4ff;
     text-align: center;
     font-family: calibri, tahoma, serif;
     line-height: 1.5;
+}
+
+#tresc {
+    float: left;
+    width: 75%;
+    height: 100%;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    background: #80ffff;
+    border: 0 solid #000040;
+    border-radius: 1px;
+    box-shadow: 0 0 2px #666;
+}
+
+#tresc p {
+    padding: 0 0 0 20px;
 }
 
 h3#galeria {
@@ -55,22 +66,6 @@ h3#galeria {
 
 ul {
     list-style-type: square;
-}
-
-#tresc {
-    float: left;
-    width: 75%;
-    height: 100%;
-    margin-bottom: 30px;
-    margin-left: 30px;
-    background: #80ffff;
-    border: 0 solid #000040;
-    border-radius: 1px;
-    box-shadow: 0 0 2px #666;
-}
-
-#tresc p {
-    padding: 0 0 0 20px;
 }
 
 #pasek {
@@ -120,7 +115,7 @@ legend {
     font-family: calibri, tahoma, serif;
 }
 
-ul#nav li {
+nav ul li {
     border: 1px solid #d5d5d5;
     list-style-type: none;
     float: left;
@@ -128,7 +123,7 @@ ul#nav li {
     margin-left: 3px;
 }
 
-ul#nav li:hover {
+nav ul li:hover {
     border: 1px solid #d5d5d5;
     list-style-type: none;
     float: left;
@@ -136,40 +131,40 @@ ul#nav li:hover {
     margin-left: 3px;
 }
 
-ul#nav li:hover a {
+nav ul li:hover a {
     color: black;
 }
 
-ul#nav li a {
+nav ul li a {
     display: block;
     padding: 4pt;
     text-decoration: none;
     color: #ffffff;
 }
 
-ul#nav li li a {
+nav ul li li a {
     width: 160px;
     background: dodgerblue;
 }
 
-ul#nav li a:hover {
+nav ul li a:hover {
     color: black;
     background: white;
 }
 
-ul#nav li ul {
+nav ul li ul {
     overflow: hidden;
     display: none;
 }
 
-ul#nav li:hover ul {
+nav ul li:hover ul {
     position: absolute;
     padding: 0;
     display: block;
     width: 177px;
 }
 
-#stopka {
+footer {
     clear: both;
     width: 100%;
     padding: 5px 0 5px 0;
