@@ -70,12 +70,12 @@ td, th {
     border: 1pt solid #000040;
 }
 
-tfoot a {
-    color: #ffffff;
+tbody tr:nth-child(even){
+    background: #ffffff;
 }
 
-*.parzysty {
-    background: #ffffff;
+tfoot a {
+    color: #ffffff;
 }
 
 nav {
