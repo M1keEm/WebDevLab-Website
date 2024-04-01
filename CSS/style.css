@@ -5,19 +5,33 @@ body {
 
 #kontener {
     background: #ffffff;
-    width: 90%;
+    width: 98%;
     box-shadow: 0 0 8px #666;
     margin: auto;
     font-size: 110%;
 }
 
+.kontener {
+    background: #ffffff;
+    width: 95%;
+    box-shadow: 0 0 8px #666;
+    margin: auto;
+    font-size: 110%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 h1, h2, footer {
+    display: inherit;
     background: #000040;
     color: #77b4ff;
     text-align: center;
     font-family: calibri, tahoma, serif;
     line-height: 1.5;
     margin-bottom: 0;
+    order: 0;
 }
 
 h3 {
@@ -27,15 +41,18 @@ h3 {
 }
 
 #tresc {
-    float: left;
-    width: 75%;
+    display: inherit;
+    width: 85%;
     height: 100%;
-    margin-bottom: 30px;
-    margin-left: 30px;
+    /*margin-bottom: 30px;*/
+    /*margin-left: 30px;*/
+    margin-left: auto;
+    margin-right: auto;
     background: #80ffff;
     border: 1px solid #95fdff;
     border-radius: 8px;
     box-shadow: 0 0 2px #666;
+    order: 1;
 }
 
 
@@ -77,9 +94,10 @@ ul {
 }
 
 aside {
-    float: right;
-    width: 20%;
+    /*order: 2;*/
+    width: 12%;
     padding: 1%;
+    text-align: left;
 }
 
 
@@ -106,10 +124,11 @@ legend {
     background: #0000a0;
     color: #dbffff;
     padding: 5px;
-    margin: 5px;
+    margin: 2%;
     font-size: 90%;
     border: 1px solid #c6f0ff;
     box-shadow: 0 0 6px #666;
+    border-radius: 8px;
 }
 
 /* hiperłącza w elementach klasy box*/
@@ -118,8 +137,10 @@ legend {
 }
 
 nav {
-    text-align: left;
-    overflow: hidden;
+    order: 1;
+    flex-basis: 100%;
+    /*text-align: left;*/
+    /*overflow: hidden;*/
     font-family: calibri, tahoma, serif;
     margin-top: 0;
     margin-bottom: 1%;
@@ -128,7 +149,7 @@ nav {
 nav ul li {
     border: 1px solid #d5d5d5;
     list-style-type: none;
-    float: left;
+    /*float: left;*/
     background: darkblue;
     margin-left: 3px;
 }
@@ -136,7 +157,7 @@ nav ul li {
 nav ul li:hover {
     border: 1px solid #d5d5d5;
     list-style-type: none;
-    float: left;
+    /*float: left;*/
     background: #ffffff;
     margin-left: 3px;
 }
