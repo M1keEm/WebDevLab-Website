@@ -40,7 +40,7 @@ h3 {
     padding: 0;
 }
 
-#tresc {
+main {
     display: inherit;
     width: 85%;
     height: 100%;
@@ -56,7 +56,7 @@ h3 {
 }
 
 
-#tresc p {
+main p {
     padding: 0 0 0 20px;
 }
 

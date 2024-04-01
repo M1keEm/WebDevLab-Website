@@ -32,7 +32,7 @@ ul {
     list-style-type: square;
 }
 
-#tresc {
+main {
     height: 100%;
     width: 95%;
     margin-bottom: 30px;
@@ -44,7 +44,7 @@ ul {
     box-shadow: 0 0 2px #666;
 }
 
-#tresc p {
+main p {
     padding: 0 0 0 20px;
 }
 
