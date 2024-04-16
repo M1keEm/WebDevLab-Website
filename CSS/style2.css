@@ -1,6 +1,12 @@
+* {
+    border-radius: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: transform 3s ease;
+}
+
 body {
     background: #4ae;
-    color: #000040;
+    color: #142d4c;
 }
 
 #kontener {
@@ -15,7 +21,7 @@ body {
     font-size: 110%;
 }
 
-header{
+header {
     text-align: center;
     font-family: calibri, tahoma, serif;
     margin-top: 0;
@@ -111,7 +117,7 @@ nav {
     margin-bottom: -2%;
 }
 
-nav ul{
+nav ul {
     display: flex;
     flex-direction: row;
 }
@@ -122,6 +128,7 @@ nav ul li {
     background: darkblue;
     margin-left: 3px;
     margin-bottom: 5px;
+    border-radius: 6px;
 }
 
 nav ul li:hover {
@@ -131,7 +138,7 @@ nav ul li:hover {
     opacity: 1;
 }
 
-nav ul li:hover a{
+nav ul li:hover a {
     color: black;
 }
 
@@ -143,13 +150,13 @@ nav a {
     font-size: 110%;
 }
 
-ul.nav_expanding{
+ul.nav_expanding {
     background: white;
     margin: 0;
     opacity: 0.98;
 }
 
-ul.nav_expanding li:hover{
+ul.nav_expanding li:hover {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -157,7 +164,7 @@ ul.nav_expanding li:hover{
     border: 1px solid #d5d5d5;
 }
 
-ul.nav_expanding li{
+ul.nav_expanding li {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -190,17 +197,39 @@ nav ul li:hover ul {
 *.box {
     background: #0000a0;
     color: #dbffff;
-    margin: 1%;
+    margin-bottom: auto;
+    margin-top: auto;
     font-size: 90%;
     border: 1px solid #c6f0ff;
     box-shadow: 0 0 6px #666;
     border-radius: 8px;
     padding: 0;
+    justify-content: center;
+    align-items: center;
 }
 
-/* hiperłącza w elementach klasy box*/
-*.box a {
-    color: #ffffb0
+*.box ul {
+    list-style-type: none;
+}
+
+
+.box ul a{
+    display: block;
+    border: 1px solid #c6f0ff;
+    width: 100%;
+    margin-left: -16%;
+    margin-right: auto;
+    padding: 4%;
+    text-decoration: none;
+    color: #ffffff;
+    background: #1989ff;
+    margin-bottom: 5%;
+}
+
+.box ul a:hover{
+    transform: scale(1.1);
+    background-color: #ffffff;
+    color: black;
 }
 
 footer {
@@ -212,6 +241,6 @@ footer {
     text-align: center;
 }
 
-@media (max-width: 470px)  {
+@media (max-width: 470px) {
 
 }
