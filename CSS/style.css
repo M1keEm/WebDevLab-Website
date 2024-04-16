@@ -73,12 +73,20 @@ h3#galeria {
     font-family: calibri, tahoma, serif;
 }
 
+/*#miniaturki {*/
+/*    display: flex;*/
+/*    flex-wrap: wrap;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    grid-gap: 15px;*/
+/*}*/
+
 #miniaturki {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 230px);
+    grid-gap: 15px;
     justify-content: center;
     align-items: center;
-    grid-gap: 15px;
 }
 
 #miniaturki a {
@@ -411,8 +419,8 @@ legend {
 .box ul a{
     display: block;
     border: 1px solid #c6f0ff;
-    width: 100%;
-    margin-left: -16%;
+    width: 90%;
+    margin-left: auto;
     margin-right: auto;
     padding: 4%;
     text-decoration: none;
