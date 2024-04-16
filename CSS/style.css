@@ -67,6 +67,8 @@ main p {
 h3#galeria {
     padding: 20px 0 0 0;
     text-align: center;
+    margin-top: auto;
+    margin-bottom: 2%;
     font-size: 160%;
     font-weight: bolder;
     color: #1989ff;
@@ -83,7 +85,7 @@ h3#galeria {
 
 #miniaturki {
     display: grid;
-    grid-template-columns: repeat(3, 230px);
+    grid-template-columns: repeat(3, 290px);
     grid-gap: 15px;
     justify-content: center;
     align-items: center;
@@ -97,8 +99,7 @@ h3#galeria {
 #miniaturki img {
     width: 100%;
     height: auto;
-    border: 2px solid #c6f0ff;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 ul {
@@ -228,7 +229,7 @@ td, th {
     border: 1pt solid #000040;
 }
 
-tbody tr:nth-child(even){
+tbody tr:nth-child(even) {
     background: #ffffff;
 }
 
@@ -402,6 +403,7 @@ legend {
     color: #dbffff;
     margin-bottom: auto;
     margin-top: auto;
+    margin-left: 0;
     font-size: 90%;
     border: 1px solid #c6f0ff;
     box-shadow: 0 0 6px #666;
@@ -413,10 +415,13 @@ legend {
 
 *.box ul {
     list-style-type: none;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding: 0 3% 0 3%;
 }
 
 
-.box ul a{
+.box ul a {
     display: block;
     border: 1px solid #c6f0ff;
     width: 90%;
@@ -430,7 +435,7 @@ legend {
     transition: background-color 0.2s ease, transform 0.4s ease;
 }
 
-.box ul a:hover{
+.box ul a:hover {
     transform: scale(1.1);
     background-color: #ffffff;
     color: black;
