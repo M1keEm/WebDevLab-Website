@@ -1,35 +1,36 @@
 <!DOCTYPE html>
-<html lang="pl" >
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="CSS/formularze.css" type="text/css"/>
+    <link rel="stylesheet" href="CSS/style.css" type="text/css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>Formularz dotacji</title>
 </head>
 <body>
 <div id="kontener">
-    <div id="baner">
+    <header>
         <h2>Szybki kurs HTML</h2>
-    </div>
-    <nav>
-        <ul id="nav">
-            <li><a href="index.html">Podstawy</a></li>
-            <li><a href="tabele.html">Tabele</a></li>
-            <li><a href="">Formularze</a>
-                <ul>
-                    <li><a href="formularze.html">Pola formularza</a></li>
-                    <li><a href="obliczenia.html">Obliczenia w formularzu</a></li>
-                    <li><a href="dotacje.html">Dotacje</a></li>
-                </ul>
-            </li>
-            <li><a href="galeria.html">Galeria</a></li>
-        </ul>
-    </nav>
-    <div id="tresc">
+        <nav>
+            <ul>
+                <li><a href="index.html">Podstawy</a></li>
+                <li><a href="tabele.html">Tabele</a></li>
+                <li><a href="">Formularze</a>
+                    <ul class="nav_expanding">
+                        <li><a href="formularze.html">Pola formularza</a></li>
+                        <li><a href="obliczenia.html">Obliczenia w formularzu</a></li>
+                        <li><a href="dotacje.html">Dotacje</a></li>
+                    </ul>
+                </li>
+                <li><a href="galeria.html">Galeria</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
         <h3>Formularz dotacji dla organizacji pozarządowej:</h3>
         <form action="#" method="get">
             <div>
                 <fieldset>
+                    <legend>Informacje o dotacji:</legend>
                     <label>
                         Wybór beneficjenta:<input id="beneficiaries list" list="beneficiaries"
                                                   placeholder="Fundacja Wielkiej Orkiestry Świątecznej Pomocy" required>
@@ -85,7 +86,7 @@
                 <input type="reset" value="Anuluj">
             </div>
         </form>
-    </div>
+    </main>
     <footer>
         &copy;MB
     </footer>

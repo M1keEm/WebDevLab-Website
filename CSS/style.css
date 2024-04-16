@@ -1,9 +1,19 @@
+* {
+    border-radius: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: transform 3s ease;
+}
+
 body {
     background: #4ae;
-    color: #000040;
+    color: #142d4c;
 }
 
 #kontener {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
     background: #ffffff;
     width: 98%;
     box-shadow: 0 0 8px #666;
@@ -11,50 +21,44 @@ body {
     font-size: 110%;
 }
 
-.kontener {
-    background: #ffffff;
-    width: 95%;
-    box-shadow: 0 0 8px #666;
-    margin: auto;
-    font-size: 110%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
+header {
+    text-align: center;
+    font-family: calibri, tahoma, serif;
+    margin-top: 0;
+    order: 0;
+    width: 100%;
 }
 
 h1, h2, footer {
-    display: inherit;
     background: #000040;
+    width: 100%;
     color: #77b4ff;
     text-align: center;
     font-family: calibri, tahoma, serif;
-    line-height: 1.5;
+    line-height: 1.7;
     margin-bottom: 0;
-    order: 0;
+    margin-top: 0;
 }
 
 h3 {
     margin-left: 13px;
     margin-top: 10px;
+    margin-bottom: 0;
     padding: 0;
 }
 
 main {
-    display: inherit;
-    width: 85%;
-    height: 100%;
-    /*margin-bottom: 30px;*/
-    /*margin-left: 30px;*/
-    margin-left: auto;
-    margin-right: auto;
+    flex: 5;
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 2%;
     background: #80ffff;
     border: 1px solid #95fdff;
     border-radius: 8px;
     box-shadow: 0 0 2px #666;
-    order: 1;
 }
-
 
 main p {
     padding: 0 0 0 20px;
@@ -70,11 +74,11 @@ h3#galeria {
 }
 
 #miniaturki {
-    display: grid;
-    grid-template-columns: repeat(3, 230px);
-    grid-gap: 15px;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    grid-gap: 15px;
 }
 
 #miniaturki a {
@@ -94,88 +98,84 @@ ul {
 }
 
 aside {
-    /*order: 2;*/
-    width: 12%;
+    display: flex;
+    flex: 1;
+    order: 2;
+    flex-direction: column;
     padding: 1%;
-    text-align: left;
-}
-
-
-fieldset {
-    background: skyblue;
-    padding: 0 10px 10px;
-    border: 1px solid #666;
-    border-radius: 8px;
-    box-shadow: 0 0 8px #666;
-    width: unset;
-}
-
-legend {
-    padding: 2px 4px;
-    background: #44aaee;
-    color: darkblue;
-    font-weight: bold;
-    border: 1px solid #000040;
-    border-radius: 8px;
-    box-shadow: 0 0 10px #666;
-}
-
-*.box {
-    background: #0000a0;
-    color: #dbffff;
-    padding: 5px;
-    margin: 2%;
-    font-size: 90%;
-    border: 1px solid #c6f0ff;
-    box-shadow: 0 0 6px #666;
-    border-radius: 8px;
-}
-
-/* hiperłącza w elementach klasy box*/
-*.box a {
-    color: #ffffb0
+    margin: 1%;
 }
 
 nav {
-    order: 1;
-    flex-basis: 100%;
-    /*text-align: left;*/
-    /*overflow: hidden;*/
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+    align-items: center;
+    text-align: left;
+    overflow: hidden;
     font-family: calibri, tahoma, serif;
-    margin-top: 0;
-    margin-bottom: 1%;
+    padding: 0;
+    margin-bottom: -2%;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
 }
 
 nav ul li {
     border: 1px solid #d5d5d5;
     list-style-type: none;
-    /*float: left;*/
     background: darkblue;
     margin-left: 3px;
+    margin-bottom: 5px;
+    border-radius: 6px;
 }
 
 nav ul li:hover {
     border: 1px solid #d5d5d5;
     list-style-type: none;
-    /*float: left;*/
     background: #ffffff;
-    margin-left: 3px;
+    opacity: 1;
 }
 
 nav ul li:hover a {
     color: black;
 }
 
-nav ul li a {
+nav a {
     display: block;
-    padding: 4pt;
+    padding: 0.4em;
     text-decoration: none;
     color: #ffffff;
+    font-size: 110%;
+}
+
+ul.nav_expanding {
+    background: white;
+    margin: 0;
+    opacity: 0.98;
+}
+
+ul.nav_expanding li:hover {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background: #c6f5ff;
+    border: 1px solid #d5d5d5;
+}
+
+ul.nav_expanding li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background: #c6f5ff;
+    border: 1px solid #d5d5d5;
 }
 
 nav ul li li a {
     width: 160px;
-    background: dodgerblue;
+    color: white;
 }
 
 nav ul li a:hover {
@@ -186,18 +186,244 @@ nav ul li a:hover {
 nav ul li ul {
     overflow: hidden;
     display: none;
+    width: 177px;
 }
 
 nav ul li:hover ul {
     position: absolute;
     padding: 0;
     display: block;
-    width: 177px;
+}
+
+table {
+    background: #ffffb3;
+    text-align: center;
+    width: 94%;
+    margin: 2%;
+    border: 1pt solid #000040;
+    border-radius: 6px;
+}
+
+caption {
+    font-size: 120%;
+    font-weight: bold;
+}
+
+tfoot, thead {
+    background: #0000a0;
+    color: #ffffff;
+    font-size: 110%;
+    padding: 5pt;
+}
+
+td, th {
+    border: 1pt solid #000040;
+}
+
+tbody tr:nth-child(even){
+    background: #ffffff;
+}
+
+tfoot a {
+    color: #ffffff;
+}
+
+form {
+    font-family: Arial, sans-serif;
+    margin: 10px;
+}
+
+/* Style the label element */
+div#labelled label {
+    display: block;
+    margin-top: 2px;
+    margin-bottom: 0;
+}
+
+/* Style the input elements */
+form input[type="text"],
+form input[type="password"],
+form input[type="email"],
+form textarea {
+    width: 20%;
+    padding: 2px;
+    margin-bottom: 1px;
+    margin-left: 0.5%;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+}
+
+form input[type="tel"] {
+    width: 6%;
+    padding: 2px;
+    margin-bottom: 1px;
+    margin-left: 0.5%;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+}
+
+form input#beneficiaries\ list {
+    width: 22%;
+    padding: 2px;
+    margin-bottom: 1px;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+}
+
+form input[type="number"] {
+    width: 5%;
+    padding: 2px;
+    margin-bottom: 1px;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+}
+
+form input#card\ number {
+    width: 9%;
+    padding: 2px;
+    margin-bottom: 1px;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+}
+
+form input#monthYear {
+    width: 4%;
+    padding: 2px;
+    margin-bottom: 1px;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+}
+
+form input[type="text"]#year {
+    width: 5%;
+    padding: 2px;
+    margin-bottom: 1px;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+}
+
+form input[type="text"]#cvv {
+    width: 2.5%;
+    padding: 2px;
+    margin-bottom: 1px;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+}
+
+form input[type="text"]#donor {
+    width: 15%;
+    padding: 2px;
+    margin-bottom: 1px;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+}
+
+form select {
+    width: 20%;
+    padding: 2px;
+    margin-bottom: 1px;
+    margin-left: 70px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+}
+
+/* przycisk wyślij */
+form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* zmiana przycisku wyślij przy hoverowaniu kursorem */
+form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+fieldset {
+    background: #c6f0ff;
+    padding: 0 10px 10px;
+    border: 1px solid #666;
+    border-radius: 8px;
+    box-shadow: 0 0 4px #666;
+    width: unset;
+}
+
+legend {
+    padding: 2px 4px;
+    background: #ffffff;
+    color: darkblue;
+    font-weight: bold;
+    border: 1px solid #000040;
+    border-radius: 8px;
+    box-shadow: 0 0 4px #666;
+}
+
+
+*.box {
+    background: #0000a0;
+    color: #dbffff;
+    margin-bottom: auto;
+    margin-top: auto;
+    font-size: 90%;
+    border: 1px solid #c6f0ff;
+    box-shadow: 0 0 6px #666;
+    border-radius: 8px;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+*.box ul {
+    list-style-type: none;
+}
+
+
+.box ul a{
+    display: block;
+    border: 1px solid #c6f0ff;
+    width: 100%;
+    margin-left: -16%;
+    margin-right: auto;
+    padding: 4%;
+    text-decoration: none;
+    color: #ffffff;
+    background: #1989ff;
+    margin-bottom: 5%;
+    transition: background-color 0.2s ease, transform 0.4s ease;
+}
+
+.box ul a:hover{
+    transform: scale(1.1);
+    background-color: #ffffff;
+    color: black;
 }
 
 footer {
+    flex: none;
+    order: 5;
     clear: both;
     width: 100%;
     padding: 5px 0 5px 0;
     text-align: center;
+}
+
+@media (max-width: 470px) {
+
 }
