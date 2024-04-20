@@ -79,19 +79,17 @@ aside {
 
 nav {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: start;
+    flex-wrap: wrap;
     align-items: center;
     text-align: left;
     overflow: hidden;
     font-family: calibri, tahoma, serif;
     padding: 0;
-    margin-bottom: -2%;
+    margin-bottom: -2.2%;
 }
 
 nav ul {
     display: flex;
-    flex-direction: row;
 }
 
 nav ul li {
@@ -101,6 +99,7 @@ nav ul li {
     margin-left: 3px;
     margin-bottom: 5px;
     border-radius: 6px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 }
 
 nav ul li:hover {
@@ -363,8 +362,7 @@ legend {
 *.box {
     background: #0000a0;
     color: #dbffff;
-    margin-bottom: auto;
-    margin-top: auto;
+    margin-bottom: 5%;
     margin-left: 0;
     font-size: 90%;
     border: 1px solid #c6f0ff;
