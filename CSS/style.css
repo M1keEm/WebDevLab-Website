@@ -9,7 +9,7 @@ body {
     color: #142d4c;
 }
 
-section{
+section {
     padding: 1%;
 }
 
@@ -167,17 +167,21 @@ nav ul li:hover ul {
 }
 
 table {
-    background: #ffffb3;
+    background: deepskyblue;
     text-align: center;
-    width: 94%;
+    width: 92%;
     margin: 2%;
     border: 1pt solid #000040;
     border-radius: 6px;
 }
 
 caption {
+    color: white;
     font-size: 120%;
     font-weight: bold;
+    background: #3172ff;
+    border: #0000a0 1pt solid;
+    padding: 0.5% 0 0.5% 0;
 }
 
 tfoot, thead {
@@ -192,7 +196,7 @@ td, th {
 }
 
 tbody tr:nth-child(even) {
-    background: #ffffff;
+    background: #b5f4ff;
 }
 
 tfoot a {
@@ -430,8 +434,6 @@ footer {
         flex-direction: column;
         align-items: center;
         width: 70%;
-        /*margin-right: auto;*/
-        /*margin-left: 0;*/
         margin-top: 2%;
         margin-left: auto;
         margin-right: auto;
@@ -447,7 +449,7 @@ footer {
         font-size: 120%;
     }
 
-    ul.nav_expanding{
+    ul.nav_expanding {
         font-size: 70%;
         width: 65.5%;
     }
