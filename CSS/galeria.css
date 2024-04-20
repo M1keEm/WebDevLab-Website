@@ -22,6 +22,12 @@ img:hover {
 h3#galeria {
     text-align: center;
     margin: 0;
+    font-weight: bold;
+    font-size: 150%;
+    color: white;
+    background: #1989ff;
+    border-radius: 12px;
+    border: 1pt solid #ffffff;
 }
 
 p {
