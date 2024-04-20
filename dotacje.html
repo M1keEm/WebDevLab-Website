@@ -26,66 +26,70 @@
         </nav>
     </header>
     <main>
-        <h3>Formularz dotacji dla organizacji pozarządowej:</h3>
-        <form action="#" method="get">
-            <div>
-                <fieldset>
-                    <legend>Informacje o dotacji:</legend>
-                    <label>
-                        Wybór beneficjenta:<input id="beneficiaries list" list="beneficiaries"
-                                                  placeholder="Fundacja Wielkiej Orkiestry Świątecznej Pomocy" required>
-                    </label>
-                    <datalist id="beneficiaries">
-                        <option value="Fundacja Dzieciom">
-                        <option value="Fundacja Wielkiej Orkiestry Świątecznej Pomocy">
-                        <option value="Fundacja Mam Marzenie">
-                        <option value="Fundacja Polsat">
-                        <option value="Fundacja TVN">
-                    </datalist>
-                    <label>
-                        Kwota dotacji:<input type="number" name="amount"
-                                             title="Proszę podać kwotę podzielną przez 10(min. 20 PLN, max.100tys. PLN):"
-                                             min="20" max="100000" step="10" required>
-                    </label>
-                </fieldset>
-                <br>
-                <fieldset>
-                    <legend>Dane karty płatniczej:</legend>
-                    Rodzaj karty płatniczej:
-                    <label>
-                        <input type="radio" name="card" value="visa" required>
-                        Visa
-                    </label>
-                    <label>
-                        <input type="radio" name="card" value="mastercard" required>
-                        Mastercard
-                    </label>
-                    <label>
-                        <input type="radio" name="card" value="amex" required>
-                        Amex
-                    </label><br>
-                    <label for="card number">
-                        Numer karty płatniczej:
-                        <input id="card number" type="text" name="card number" pattern="^[0-9]{13}([0-9]{3})?$"
-                               title="Proszę podać 13 lub 16-cyfrowy numer karty" minlength="13" maxlength="16"
-                               required>
-                    </label><br>
-                    <label for="monthYear">Data wygaśnięcia karty płatniczej:</label>
-                    <input type="text" id="monthYear" name="monthYear" pattern="(0[1-9]|1[0-2])/(19|20)\d\d"
-                           title="Proszę podać datę w formacie MM/YYYY" placeholder="01/2024" required>
-                    <label for="cvv">CVV:</label>
-                    <input type="text" id="cvv" name="cvv" pattern="^[0-9]{3}([0-9]{1})?$"
-                           title="Proszę podać 3 lub 4 cyfry numeru CVV" required>
-                </fieldset>
-                <br>
-                <label for="donor">Darczyńca:</label>
-                <input type="text" id="donor" name="donor" pattern=".{3,}" title="Proszę wprowadzić co najmniej 3 znaki"
-                       required>
-                <br><br>
-                <input type="submit" value="Wyślij">
-                <input type="reset" value="Anuluj">
-            </div>
-        </form>
+        <section>
+            <h3>Formularz dotacji dla organizacji pozarządowej:</h3>
+            <form action="#" method="get">
+                <div>
+                    <fieldset>
+                        <legend>Informacje o dotacji:</legend>
+                        <label>
+                            Wybór beneficjenta:<input id="beneficiaries list" list="beneficiaries"
+                                                      placeholder="Fundacja Wielkiej Orkiestry Świątecznej Pomocy"
+                                                      required>
+                        </label>
+                        <datalist id="beneficiaries">
+                            <option value="Fundacja Dzieciom">
+                            <option value="Fundacja Wielkiej Orkiestry Świątecznej Pomocy">
+                            <option value="Fundacja Mam Marzenie">
+                            <option value="Fundacja Polsat">
+                            <option value="Fundacja TVN">
+                        </datalist>
+                        <label>
+                            Kwota dotacji:<input type="number" name="amount"
+                                                 title="Proszę podać kwotę podzielną przez 10(min. 20 PLN, max.100tys. PLN):"
+                                                 min="20" max="100000" step="10" required>
+                        </label>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>Dane karty płatniczej:</legend>
+                        Rodzaj karty płatniczej:
+                        <label>
+                            <input type="radio" name="card" value="visa" required>
+                            Visa
+                        </label>
+                        <label>
+                            <input type="radio" name="card" value="mastercard" required>
+                            Mastercard
+                        </label>
+                        <label>
+                            <input type="radio" name="card" value="amex" required>
+                            Amex
+                        </label><br>
+                        <label for="card number">
+                            Numer karty płatniczej:
+                            <input id="card number" type="text" name="card number" pattern="^[0-9]{13}([0-9]{3})?$"
+                                   title="Proszę podać 13 lub 16-cyfrowy numer karty" minlength="13" maxlength="16"
+                                   required>
+                        </label><br>
+                        <label for="monthYear">Data wygaśnięcia karty płatniczej:</label>
+                        <input type="text" id="monthYear" name="monthYear" pattern="(0[1-9]|1[0-2])/(19|20)\d\d"
+                               title="Proszę podać datę w formacie MM/YYYY" placeholder="01/2024" required>
+                        <label for="cvv">CVV:</label>
+                        <input type="text" id="cvv" name="cvv" pattern="^[0-9]{3}([0-9]{1})?$"
+                               title="Proszę podać 3 lub 4 cyfry numeru CVV" required>
+                    </fieldset>
+                    <br>
+                    <label for="donor">Darczyńca:</label>
+                    <input type="text" id="donor" name="donor" pattern=".{3,}"
+                           title="Proszę wprowadzić co najmniej 3 znaki"
+                           required>
+                    <br><br>
+                    <input type="submit" value="Wyślij">
+                    <input type="reset" value="Anuluj">
+                </div>
+            </form>
+        </section>
     </main>
     <footer>
         &copy;MB

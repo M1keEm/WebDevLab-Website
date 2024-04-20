@@ -64,44 +64,6 @@ main p {
     padding: 0 0 0 20px;
 }
 
-h3#galeria {
-    padding: 20px 0 0 0;
-    text-align: center;
-    margin-top: auto;
-    margin-bottom: 2%;
-    font-size: 160%;
-    font-weight: bolder;
-    color: #1989ff;
-    font-family: calibri, tahoma, serif;
-}
-
-/*#miniaturki {*/
-/*    display: flex;*/
-/*    flex-wrap: wrap;*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
-/*    grid-gap: 15px;*/
-/*}*/
-
-#miniaturki {
-    display: grid;
-    grid-template-columns: repeat(3, 290px);
-    grid-gap: 15px;
-    justify-content: center;
-    align-items: center;
-}
-
-#miniaturki a {
-    text-decoration: none;
-    color: inherit;
-}
-
-#miniaturki img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
 ul {
     list-style-type: square;
 }
@@ -448,8 +410,4 @@ footer {
     width: 100%;
     padding: 5px 0 5px 0;
     text-align: center;
-}
-
-@media (max-width: 470px) {
-
 }

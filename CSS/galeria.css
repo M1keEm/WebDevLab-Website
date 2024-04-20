@@ -1,9 +1,19 @@
+* {
+    border-radius: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: transform 3s ease;
+}
+
 body {
-    background: #4ae;
-    color: #000040;
+    background: #44aaee;
+    color: #142d4c;
 }
 
 #kontener {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
     background: #ffffff;
     width: 98%;
     box-shadow: 0 0 8px #666;
@@ -11,40 +21,44 @@ body {
     font-size: 110%;
 }
 
-
+header {
+    text-align: center;
+    font-family: calibri, tahoma, serif;
+    margin-top: 0;
+    order: 0;
+    width: 100%;
+}
 
 h1, h2, footer {
-    display: inherit;
     background: #000040;
+    width: 100%;
     color: #77b4ff;
     text-align: center;
     font-family: calibri, tahoma, serif;
-    line-height: 1.5;
+    line-height: 1.7;
     margin-bottom: 0;
-    order: 0;
+    margin-top: 0;
 }
 
 h3 {
     margin-left: 13px;
     margin-top: 10px;
+    margin-bottom: 0;
     padding: 0;
 }
 
 main {
-    display: inherit;
-    width: 85%;
-    height: 100%;
-    /*margin-bottom: 30px;*/
-    /*margin-left: 30px;*/
-    margin-left: auto;
-    margin-right: auto;
+    flex: 5;
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 2%;
     background: #80ffff;
     border: 1px solid #95fdff;
     border-radius: 8px;
     box-shadow: 0 0 2px #666;
-    order: 1;
 }
-
 
 main p {
     padding: 0 0 0 20px;
@@ -53,15 +67,25 @@ main p {
 h3#galeria {
     padding: 20px 0 0 0;
     text-align: center;
+    margin-top: auto;
+    margin-bottom: 2%;
     font-size: 160%;
     font-weight: bolder;
     color: #1989ff;
     font-family: calibri, tahoma, serif;
 }
 
+/*#miniaturki {*/
+/*    display: flex;*/
+/*    flex-wrap: wrap;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    grid-gap: 15px;*/
+/*}*/
+
 #miniaturki {
     display: grid;
-    grid-template-columns: repeat(3, 230px);
+    grid-template-columns: repeat(3, 290px);
     grid-gap: 15px;
     justify-content: center;
     align-items: center;
@@ -73,10 +97,18 @@ h3#galeria {
 }
 
 #miniaturki img {
-    width: 100%;
-    height: auto;
-    border: 2px solid #c6f0ff;
-    border-radius: 5px;
+    border-radius: 10px;
+    -webkit-box-shadow: 11px 11px 41px -20px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 11px 11px 41px -20px rgba(66, 68, 90, 1);
+    box-shadow: 11px 11px 41px -20px rgba(66, 68, 90, 1);
+    height: 200px;
+    width: 266px;
+    margin: 1%;
+    transition: transform 0.3s;
+}
+
+img:hover {
+    transform: scale(1.1);
 }
 
 ul {
@@ -84,88 +116,84 @@ ul {
 }
 
 aside {
-    /*order: 2;*/
-    width: 12%;
+    display: flex;
+    flex: 1;
+    order: 2;
+    flex-direction: column;
     padding: 1%;
-    text-align: left;
-}
-
-
-fieldset {
-    background: skyblue;
-    padding: 0 10px 10px;
-    border: 1px solid #666;
-    border-radius: 8px;
-    box-shadow: 0 0 8px #666;
-    width: unset;
-}
-
-legend {
-    padding: 2px 4px;
-    background: #44aaee;
-    color: darkblue;
-    font-weight: bold;
-    border: 1px solid #000040;
-    border-radius: 8px;
-    box-shadow: 0 0 10px #666;
-}
-
-*.box {
-    background: #0000a0;
-    color: #dbffff;
-    padding: 5px;
-    margin: 2%;
-    font-size: 90%;
-    border: 1px solid #c6f0ff;
-    box-shadow: 0 0 6px #666;
-    border-radius: 8px;
-}
-
-/* hiperłącza w elementach klasy box*/
-*.box a {
-    color: #ffffb0
+    margin: 1%;
 }
 
 nav {
-    order: 1;
-    flex-basis: 100%;
-    /*text-align: left;*/
-    /*overflow: hidden;*/
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+    align-items: center;
+    text-align: left;
+    overflow: hidden;
     font-family: calibri, tahoma, serif;
-    margin-top: 0;
-    margin-bottom: 1%;
+    padding: 0;
+    margin-bottom: -2%;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
 }
 
 nav ul li {
     border: 1px solid #d5d5d5;
     list-style-type: none;
-    /*float: left;*/
     background: darkblue;
     margin-left: 3px;
+    margin-bottom: 5px;
+    border-radius: 6px;
 }
 
 nav ul li:hover {
     border: 1px solid #d5d5d5;
     list-style-type: none;
-    /*float: left;*/
     background: #ffffff;
-    margin-left: 3px;
+    opacity: 1;
 }
 
 nav ul li:hover a {
     color: black;
 }
 
-nav ul li a {
+nav a {
     display: block;
-    padding: 4pt;
+    padding: 0.4em;
     text-decoration: none;
     color: #ffffff;
+    font-size: 110%;
+}
+
+ul.nav_expanding {
+    background: white;
+    margin: 0;
+    opacity: 0.98;
+}
+
+ul.nav_expanding li:hover {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background: #c6f5ff;
+    border: 1px solid #d5d5d5;
+}
+
+ul.nav_expanding li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background: #c6f5ff;
+    border: 1px solid #d5d5d5;
 }
 
 nav ul li li a {
     width: 160px;
-    background: dodgerblue;
+    color: white;
 }
 
 nav ul li a:hover {
@@ -176,16 +204,60 @@ nav ul li a:hover {
 nav ul li ul {
     overflow: hidden;
     display: none;
+    width: 177px;
 }
 
 nav ul li:hover ul {
     position: absolute;
     padding: 0;
     display: block;
-    width: 177px;
+}
+
+.box {
+    background: #0000a0;
+    color: #dbffff;
+    margin-bottom: 5px;
+    margin-left: 0;
+    font-size: 90%;
+    border: 1px solid #c6f0ff;
+    box-shadow: 0 0 6px #666;
+    border-radius: 8px;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+*.box ul {
+    list-style-type: none;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding: 0 3% 0 3%;
+}
+
+
+.box ul a {
+    display: block;
+    border: 1px solid #c6f0ff;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4%;
+    text-decoration: none;
+    color: #ffffff;
+    background: #1989ff;
+    margin-bottom: 5%;
+    transition: background-color 0.2s ease, transform 0.4s ease;
+}
+
+.box ul a:hover {
+    transform: scale(1.1);
+    background-color: #ffffff;
+    color: black;
 }
 
 footer {
+    flex: none;
+    order: 5;
     clear: both;
     width: 100%;
     padding: 5px 0 5px 0;
