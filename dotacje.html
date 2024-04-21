@@ -2,7 +2,7 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="CSS/style.css" type="text/css"/>
+    <link rel="stylesheet" href="CSS/style.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>Formularz dotacji</title>
 </head>
@@ -33,7 +33,7 @@
                     <fieldset>
                         <legend>Informacje o dotacji:</legend>
                         <label>
-                            Wybór beneficjenta:<input id="beneficiaries list" list="beneficiaries"
+                            Wybór beneficjenta:<input id="beneficiariesList" list="beneficiaries"
                                                       placeholder="Fundacja Wielkiej Orkiestry Świątecznej Pomocy"
                                                       required>
                         </label>
@@ -66,9 +66,9 @@
                             <input type="radio" name="card" value="amex" required>
                             Amex
                         </label><br>
-                        <label for="card number">
+                        <label for="cardNumber">
                             Numer karty płatniczej:
-                            <input id="card number" type="text" name="card number" pattern="^[0-9]{13}([0-9]{3})?$"
+                            <input id="cardNumber" type="text" name="cardNumber" pattern="^[0-9]{13}([0-9]{3})?$"
                                    title="Proszę podać 13 lub 16-cyfrowy numer karty" minlength="13" maxlength="16"
                                    required>
                         </label><br>
