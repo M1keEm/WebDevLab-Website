@@ -1,11 +1,11 @@
 function obliczRate() {
-    var K = parseInt(document.getElementById('kwota').value);
+    var kwota = parseFloat(document.getElementById('kwota').value);
     var oprocentowanieRoczne = parseFloat(document.getElementById('oprocRoczne').value);
     var liczbaRat = parseInt(document.getElementById('liczbaRat').value);
     var wynik = document.getElementById('rata');
 
     // Validate inputs
-    if (isNaN(K) || isNaN(oprocentowanieRoczne) || isNaN(liczbaRat)) {
+    if (isNaN(kwota) || isNaN(oprocentowanieRoczne) || isNaN(liczbaRat)) {
         alert("Proszę wprowadzić prawidłowe liczby.");
         wynik.value = '';
         return;
@@ -22,7 +22,8 @@ function obliczRate() {
     }
 
     // Calculate the installment
-    var rata = (K * pr_mc) / (1 - Math.pow(1 + pr_mc, -liczbaRat));
+    var rata = (kwota * pr_mc) / (1 - Math.pow(1 + pr_mc, -liczbaRat));
+    var koszt = document.getElementById('koszt');
 
     // Validate the result
     if (!isFinite(rata) || isNaN(rata)) {
@@ -30,5 +31,6 @@ function obliczRate() {
         wynik.value = '';
     } else {
         wynik.value = rata.toFixed(2);
+        koszt.value = (rata*12-kwota).toFixed(2);
     }
 }
