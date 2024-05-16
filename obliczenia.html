@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/style.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=yes">
+    <title> Szybki kurs HTML </title>
+</head>
+<body>
+<div id="kontener">
+    <header>
+        <h2>Szybki kurs HTML</h2>
+        <nav>
+            <ul>
+                <li><a href="index.html">Podstawy</a></li>
+                <li><a href="tabele.html">Tabele</a></li>
+                <li><a href="">Formularze</a>
+                    <ul class="nav_expanding">
+                        <li><a href="formularze.html">Pola formularza</a></li>
+                        <li><a href="obliczenia.html">Obliczenia w formularzu</a></li>
+                        <li><a href="dotacje.html">Dotacje</a></li>
+                    </ul>
+                </li>
+                <li><a href="galeria.html" title="">Galeria</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div><h3>Dodawanie</h3>
+            <table class="liczenie">
+                <tbody>
+                <tr>
+                    <td>Liczba 1:</td>
+                    <td><input id="l1"/></td>
+                </tr>
+                <tr>
+                    <td>Liczba 2:</td>
+                    <td><input id="l2"/></td>
+                </tr>
+                <tr>
+                    <td>
+                        <button onclick="oblicz()">Oblicz sumę :</button>
+                    </td>
+                    <td><input id="suma" disabled value=""/></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <table class="liczenie">
+                <tbody>
+                <tr>
+                    <td>Kwota pożyczki:</td>
+                    <td><input id="kwota"/></td>
+                </tr>
+                <tr>
+                    <td>Oprocentowanie roczne:</td>
+                    <td><input id="oprocRoczne"/></td>
+                </tr>
+                <tr>
+                    <td>Liczba rat:</td>
+                    <td><input id="liczbaRat"/></td>
+                </tr>
+                <tr>
+                    <td>Oprocentowanie w skali miesiąca:</td>
+                    <td><input id="oprocMiesieczne"/></td>
+                </tr>
+                <tr>
+                    <td>
+                        <button onclick="oblicz2()">Oblicz sumę :</button>
+                    </td>
+                    <td><input id="suma2" disabled value=""/></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <section>
+            <p>
+                <a href="https://validator.w3.org" target="_blank">HTML walidator</a> <img src="w3c-no-bars.png"
+                                                                                           alt="w3c walidator">
+            </p>
+        </section>
+    </main>
+    <aside>
+        <div class="box">
+            <h3>Walidatory:</h3>
+            <ul>
+                <li><a href="https://validator.w3.org/" target="_blank">HTML </a></li>
+                <li><a href="https://jigsaw.w3.org/css-validator/" target="_blank">CSS</a></li>
+            </ul>
+        </div>
+        <div class="box">
+            <h3>Kursy:</h3>
+            <ul>
+                <li><a href="https://www.w3schools.com/html/" target="_blank"> HTML </a></li>
+                <li><a href="https://www.w3schools.com/css/" target="_blank"> CSS </a></li>
+                <li><a href="https://www.w3schools.com/js/" target="_blank"> JS </a></li>
+                <li><a href="https://www.w3schools.com/php/" target="_blank"> PHP </a></li>
+            </ul>
+        </div>
+    </aside>
+    <footer>
+        &copy;MB
+    </footer>
+</div>
+</body>
+</html>
