@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/style.css" type="text/css">
+    <script src="JS/scripts.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=yes">
+    <title> Kalkulator </title>
+</head>
+<body>
+<div id="kontener">
+    <header>
+        <h2>Szybki kurs HTML</h2>
+        <nav>
+            <ul>
+                <li><a href="index.html">Podstawy</a></li>
+                <li><a href="tabele.html">Tabele</a></li>
+                <li><a href="">Formularze</a>
+                    <ul class="nav_expanding">
+                        <li><a href="formularze.html">Pola formularza</a></li>
+                        <li><a href="obliczenia.html">Obliczenia w formularzu</a></li>
+                        <li><a href="dotacje.html">Dotacje</a></li>
+                        <li><a href="kalkulator.html">Kalkulator</a></li>
+                    </ul>
+                </li>
+                <li><a href="galeria.html">Galeria</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <table id="kalkulator">
+                <tr>
+                    <td colspan="2"><label for="number1">Liczba 1:</label></td>
+                    <td colspan="2"><input type="number" id="number1" name="number1"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><label for="number2">Liczba 2:</label></td>
+                    <td colspan="2"><input type="number" id="number2" name="number2"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><label for="addition">Dodawanie</label><input type="radio" id="addition"
+                                                                                  name="operation" value="addition">
+                    </td>
+                    <td colspan="2"><label for="subtraction">Odejmowanie</label><input type="radio" id="subtraction"
+                                                                                       name="operation"
+                                                                                       value="subtraction">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><label for="multiplication">Mnożenie</label><input type="radio" id="multiplication"
+                                                                                       name="operation"
+                                                                                       value="multiplication"></td>
+                    <td colspan="2"><label for="division">Dzielenie</label><input type="radio" id="division"
+                                                                                  name="operation" value="division">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4"><label for="sqrt">Pierwiastkowanie (dla Liczby 1)</label><input type="radio"
+                                                                                                    id="sqrt"
+                                                                                                    name="operation"
+                                                                                                    value="sqrt"></td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <button type="button" onclick="calculate()">Oblicz</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><label for="result">Wynik:</label></td>
+                    <td colspan="2"><input type="text" id="result" name="result" readonly></td>
+                </tr>
+                <tr>
+                    <td colspan="4"><p id="error" class="error"></p></td>
+                </tr>
+            </table>
+
+
+        </div>
+        <section>
+            <p>
+                <a href="https://validator.w3.org" target="_blank">HTML walidator</a> <img src="w3c-no-bars.png"
+                                                                                           alt="w3c walidator">
+            </p>
+        </section>
+    </main>
+    <aside>
+        <div class="box">
+            <h3>Walidatory:</h3>
+            <ul>
+                <li><a href="https://validator.w3.org/" target="_blank">HTML </a></li>
+                <li><a href="https://jigsaw.w3.org/css-validator/" target="_blank">CSS</a></li>
+            </ul>
+        </div>
+        <div class="box">
+            <h3>Kursy:</h3>
+            <ul>
+                <li><a href="https://www.w3schools.com/html/" target="_blank"> HTML </a></li>
+                <li><a href="https://www.w3schools.com/css/" target="_blank"> CSS </a></li>
+                <li><a href="https://www.w3schools.com/js/" target="_blank"> JS </a></li>
+                <li><a href="https://www.w3schools.com/php/" target="_blank"> PHP </a></li>
+            </ul>
+        </div>
+    </aside>
+    <footer>
+        &copy;MB
+    </footer>
+</div>
+</body>
+</html>
