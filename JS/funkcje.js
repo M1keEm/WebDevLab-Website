@@ -42,7 +42,7 @@ function pokazGalerie() {
 function pokazKontakt() {
     var tresc = '<h2><br />Kontakt</h2>';
 //uzupełnij treść:
-// tresc+= ...
+    tresc += "Coś tam coś tam";
     return tresc;
 }
 
@@ -66,6 +66,5 @@ function pokazDane() {
     var dane = "Następujące dane zostaną wysłane:\n";
     dane += "Email: " + document.getElementById('email').value + "\n";
 // uzupełnij dane ...
-    if (window.confirm(dane)) return true;
-    else return false;
+    return window.confirm(dane);
 }
