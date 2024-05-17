@@ -33,8 +33,8 @@ function pokazGalerie() {
     tresc += ' <div class="galeria">';
 //wygeneruj kod HTML z obrazami za pomocą pętli for:
     for (let i = 1; i <= 10; i++) {
-        //var source = "../zdjecia/zdjecia/obraz" + i.toString() + ".JPG";
-        //tresc += '<div class="slajd"> <img src= ></div>';
+        var source = "zdjecia/zdjecia/obraz" + i + ".JPG";
+        tresc += '<div class="slajd"><img src="' + source + '" alt="obraz ' + i + '"></div>';
     }
     return tresc + '</div>';
 }
