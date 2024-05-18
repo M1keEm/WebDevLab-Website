@@ -22,6 +22,7 @@ function sprawdz() {
     let obiektNazw = /^[a-zA-Z\s\-]{1,30}$/;
     let obiektWiek = /^(1[6-9]|[2-9][0-9]|1[0-1][0-9]|120)$/;
     let obiektemail = /^([a-zA-Z0-9])+([.a-zA-Z0-9_-])*@([a-zA-Z0-9_-])+(\.[a-zA-Z0-9_-]+)+$/;
+    let obiektTelefon = /;
 
     if (!sprawdzPole("surname", obiektNazw)) {
         ok = false;
@@ -32,6 +33,11 @@ function sprawdz() {
         ok = false;
         document.getElementById("age_error").innerHTML = "Wpisz poprawnie wiek!";
     } else document.getElementById("age_error").innerHTML = "";
+
+    if(!sprawdzPole("phone", obiektTelefon)) {
+        ok = false;
+        document.getElementById("phone_error").innerHTML = "Wpisz poprawnie numer telefonu!";
+    } else document.getElementById("phone_error").innerHTML = "";
 
     if (!sprawdzPole("email", obiektemail)) {
         ok = false;
