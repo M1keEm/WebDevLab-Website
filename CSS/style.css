@@ -13,6 +13,10 @@ section {
     padding: 1%;
 }
 
+.czerwone{
+    color: red;
+}
+
 #kalkulator {
     #number1, #number2 {
         width: 200px;
@@ -272,7 +276,7 @@ form textarea {
 }
 
 form input[type="tel"] {
-    width: 12%;
+    width: 30%;
     padding: 2px;
     margin-bottom: 1px;
     margin-left: 0.5%;

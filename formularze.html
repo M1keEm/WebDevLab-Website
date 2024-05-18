@@ -70,7 +70,8 @@
                     </tr>
                     <tr>
                         <td><label for="phone">Nr telefonu*:</label></td>
-                        <td><input type="tel" name="phone" id="phone" title="Proszę podać 9-cyfrowy nr telefonu" required placeholder="123 456 789"></td>
+                        <td><input type="tel" name="phone" id="phone" title="Proszę podać 9-cyfrowy nr telefonu"
+                                   required placeholder="123456789" minlength="9" maxlength="9"></td>
                         <td id="phone_error" class="czerwone"></td>
                     </tr>
                     <tr>
@@ -86,8 +87,9 @@
                             <label><input type="checkbox" name="PHP" id="PHP" value="PHP"> PHP</label>
                             <label><input type="checkbox" name="C/C++" id="C/C++" value="C"> C/C++</label>
                             <label><input type="checkbox" name="Java" id="Java" value="J"> Java</label>
-                            <span id="language_error" class="czerwone"></span>
+
                         </td>
+                        <td><span id="language_error" class="czerwone"></span></td>
                     </tr>
                     <tr>
                         <td colspan="2"><h4>Sposób zapłaty:</h4></td>
@@ -95,10 +97,12 @@
                     <tr>
                         <td colspan="2">
                             <label><input type="radio" name="payment_method" id="payment_method_ec" value="EC"> eurocard</label>
-                            <label><input type="radio" name="payment_method" id="payment_method_vi" value="VI"> visa</label>
-                            <label><input type="radio" name="payment_method" id="payment_method_bt" value="BT"> przelew bankowy</label>
-                            <span id="payment_error" class="czerwone"></span>
+                            <label><input type="radio" name="payment_method" id="payment_method_vi" value="VI">
+                                visa</label>
+                            <label><input type="radio" name="payment_method" id="payment_method_bt" value="BT"> przelew
+                                bankowy</label>
                         </td>
+                        <td><span id="payment_error" class="czerwone"></span></td>
                     </tr>
                     <tr>
                         <td colspan="2" style="text-align:center;">
