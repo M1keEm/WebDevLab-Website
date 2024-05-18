@@ -22,7 +22,7 @@ function sprawdz() {
     let obiektNazw = /^[a-zA-Z\s\-]{1,30}$/;
     let obiektWiek = /^(1[6-9]|[2-9][0-9]|1[0-1][0-9]|120)$/;
     let obiektemail = /^([a-zA-Z0-9])+([.a-zA-Z0-9_-])*@([a-zA-Z0-9_-])+(\.[a-zA-Z0-9_-]+)+$/;
-    let obiektTelefon = /;
+    let obiektTelefon = /^\d{9}$/;
 
     if (!sprawdzPole("surname", obiektNazw)) {
         ok = false;
