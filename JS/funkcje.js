@@ -94,6 +94,5 @@ function pokazDane() {
     }
 
     dane += "Treść komentarza:" + document.getElementById('wiadomosc').value;
-// uzupełnij dane ...
     return window.confirm(dane);
 }
