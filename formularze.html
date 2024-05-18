@@ -42,65 +42,64 @@
         <article>
             <h3>Przykładowy formularz HTML:</h3>
             <form action="mailto:michalbanaszek03@gmail.com" method="POST">
-                <div id="labelled">
-                    <label>
-                        Nazwisko*:
-                        <input type="text" name="surname" required pattern="[a-zA-Z\-]{1,30}\s[a-zA-Z\-]{1,30}">
-                    </label>
-                    <label>
-                        Wiek:
-                        <input type="number" name="age" min="16" max="120" step="1">
-                    </label>
-                    <label>
-                        Państwo*:
-                        <select size="1" name="country" required>
-                            <option value="">Kraj</option>
-                            <option value="pl">Polska</option>
-                            <option value="en">Anglia</option>
-                            <option value="cz">Czechy</option>
-                            <option value="n">Niemcy</option>
-                            <option value="s">Słowacja</option>
-                            <option value="w">Węgry</option>
-                        </select>
-                    </label>
-                    <label>
-                        Nr telefonu*:
-                        <input type="tel" name="telefon" title="Proszę podać 9-cyfrowy nr telefonu" required
-                               placeholder="123 456 789" maxlength="9" pattern="[0-9]{9}">
-                    </label>
-                    <label>
-                        Adres e-mail*:
-                        <input type="email" name="email" required placeholder="mail@gmail.com">
-                    </label>
-                </div>
-                <h4>Zamawiam tutorial z języka:</h4>
-                <label>
-                    <input type="checkbox" name="PHP" value="PHP">
-                    PHP
-                </label>
-                <label>
-                    <input type="checkbox" name="C/C++" value="C">
-                    C/C++
-                </label>
-                <label>
-                    <input type="checkbox" name="Java" value="J">
-                    Java
-                </label>
-                <h4>Sposób zapłaty:</h4>
-                <label>
-                    <input type="radio" name="payment method" value="EC">
-                    eurocard
-                </label>
-                <label>
-                    <input type="radio" name="payment method" value="VI">
-                    visa
-                </label>
-                <label>
-                    <input type="radio" name="payment method" value="BT">
-                    przelew bankowy
-                </label><br><br>
-                <input type="submit" value="Wyślij">
-                <input type="reset" value="Anuluj">
+                <table>
+                    <tr>
+                        <td><label for="surname">Nazwisko*:</label></td>
+                        <td><input type="text" name="surname" id="surname" required pattern="[a-zA-Z\-]{1,30}\s[a-zA-Z\-]{1,30}"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="age">Wiek:</label></td>
+                        <td><input type="number" name="age" id="age" min="16" max="120" step="1"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="country">Państwo*:</label></td>
+                        <td>
+                            <select size="1" name="country" id="country" required>
+                                <option value="">Kraj</option>
+                                <option value="pl">Polska</option>
+                                <option value="en">Anglia</option>
+                                <option value="cz">Czechy</option>
+                                <option value="n">Niemcy</option>
+                                <option value="s">Słowacja</option>
+                                <option value="w">Węgry</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="telefon">Nr telefonu*:</label></td>
+                        <td><input type="tel" name="telefon" id="telefon" title="Proszę podać 9-cyfrowy nr telefonu" required placeholder="123 456 789" maxlength="9" pattern="[0-9]{9}"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Adres e-mail*:</label></td>
+                        <td><input type="email" name="email" id="email" required placeholder="mail@gmail.com"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><h4>Zamawiam tutorial z języka:</h4></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <label><input type="checkbox" name="PHP" value="PHP"> PHP</label>
+                            <label><input type="checkbox" name="C/C++" value="C"> C/C++</label>
+                            <label><input type="checkbox" name="Java" value="J"> Java</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><h4>Sposób zapłaty:</h4></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <label><input type="radio" name="payment method" value="EC"> eurocard</label>
+                            <label><input type="radio" name="payment method" value="VI"> visa</label>
+                            <label><input type="radio" name="payment method" value="BT"> przelew bankowy</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align:center;">
+                            <input type="submit" value="Wyślij">
+                            <input type="reset" value="Anuluj">
+                        </td>
+                    </tr>
+                </table>
             </form>
         </article>
     </main>

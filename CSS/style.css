@@ -212,8 +212,9 @@ nav ul li:hover ul {
 table {
     background: deepskyblue;
     text-align: center;
-    width: 92%;
-    margin: 2%;
+    width: 82%;
+    margin-left: auto;
+    margin-right: auto;
     border: 1pt solid #000040;
     border-radius: 6px;
 }
@@ -263,7 +264,6 @@ form input[type="text"],
 form input[type="password"],
 form input[type="email"],
 form textarea {
-    width: 20%;
     padding: 2px;
     margin-bottom: 1px;
     margin-left: 0.5%;
@@ -272,7 +272,7 @@ form textarea {
 }
 
 form input[type="tel"] {
-    width: 6%;
+    width: 12%;
     padding: 2px;
     margin-bottom: 1px;
     margin-left: 0.5%;
@@ -354,7 +354,6 @@ form select {
     width: 20%;
     padding: 2px;
     margin-bottom: 1px;
-    margin-left: 70px;
     border: 2px solid #ccc;
     border-radius: 6px;
 }
