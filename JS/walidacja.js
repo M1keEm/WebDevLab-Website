@@ -56,3 +56,29 @@ function sprawdz() {
 
     return ok;
 }
+
+function pokazDane() {
+//Funkcja zbiera dane wpisane w pola formularza i wyświetla okienko typu confirm do zatwierdzenia przez użytkownika:
+    var dane = "Dane z wypełnionego przez ciebie formularza: \n";
+
+    dane += "Email: " + document.getElementById('email').value + "\n";
+    dane += "Imię i nazwisko: " + document.getElementById('imie').value + "\n";
+    dane += "Telefon: " + document.getElementById('phone').value + "\n";
+
+    var interests = document.querySelectorAll('input[name="interests"]:checked');
+    var interestsArray = [];
+    interests.forEach(function (interest) {
+        interestsArray.push(interest.value);
+    });
+    dane += "Zainteresowania: " + interestsArray.join(", ") + "\n";
+
+    // Zbierz wybraną grupę wiekową
+    var age = document.querySelector('input[name="age"]:checked');
+    if (age) {
+        dane += "Wiek: " + age.value + "\n";
+    }
+
+    dane += "Treść komentarza:" + document.getElementById('wiadomosc').value;
+// uzupełnij dane ...
+    return window.confirm(dane);
+}
